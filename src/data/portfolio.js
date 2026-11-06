@@ -1,0 +1,126 @@
+export const PROJECTS = [
+  {
+    slug: "fintech-dashboard",
+    title: "Fintech Dashboard",
+    tag: "Web Application",
+    img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?fm=jpg&q=80&w=1200&auto=format&fit=crop",
+    accent: "#4F8CFF",
+    client: "FinEdge Solutions",
+    overview: "A real-time analytics dashboard that gives a fintech operations team a single view of transactions, risk flags, and account health — replacing a patchwork of spreadsheets and disconnected tools.",
+    highlights: [
+      "Real-time transaction monitoring with anomaly alerts",
+      "Role-based dashboards for finance, risk, and support teams",
+      "Custom reporting with exportable data views",
+      "Secure, audit-logged access across the platform",
+    ],
+    results: [
+      ["40%", "Faster incident response"],
+      ["3x", "Faster monthly reporting"],
+      ["99.9%", "Platform uptime"],
+    ],
+  },
+  {
+    slug: "ecommerce-platform",
+    title: "E-commerce Platform",
+    tag: "UI/UX Design",
+    img: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?fm=jpg&q=80&w=1200&auto=format&fit=crop",
+    accent: "#8B7CFF",
+    client: "Lumen Retail",
+    overview: "A full UI/UX redesign of an online storefront, focused on reducing checkout drop-off and making product discovery faster on both desktop and mobile.",
+    highlights: [
+      "Streamlined 4-step checkout down to 2 steps",
+      "Mobile-first product browsing & filtering",
+      "Design system for consistent UI across the storefront",
+      "Usability-tested cart & payment flow",
+    ],
+    results: [
+      ["28%", "Increase in conversion rate"],
+      ["-35%", "Cart abandonment"],
+      ["4.7/5", "Post-launch UX rating"],
+    ],
+  },
+  {
+    slug: "healthcare-app",
+    title: "Healthcare App",
+    tag: "Mobile Application",
+    img: "https://images.unsplash.com/photo-1676311522524-fa7c0bffd644?fm=jpg&q=80&w=1200&auto=format&fit=crop",
+    accent: "#34D6C4",
+    client: "Northfield Health",
+    overview: "A patient-facing mobile app for appointment booking, prescription refills, and secure messaging with care providers — built for both iOS and Android.",
+    highlights: [
+      "Appointment booking & reminders",
+      "Secure messaging with care providers",
+      "Prescription refill requests",
+      "HIPAA-conscious data handling throughout",
+    ],
+    results: [
+      ["60%", "Fewer missed appointments"],
+      ["4.8★", "App store rating"],
+      ["50k+", "Active patients"],
+    ],
+  },
+  {
+    slug: "logistics-tracker",
+    title: "Logistics Tracker",
+    tag: "Web Application",
+    img: "https://images.unsplash.com/photo-1616432043562-3671ea2e5242?fm=jpg&q=80&w=1200&auto=format&fit=crop",
+    accent: "#FF8A5B",
+    client: "Meridian Freight",
+    overview: "A live shipment tracking platform giving dispatchers and customers real-time visibility into delivery status, routes, and delays across a regional freight network.",
+    highlights: [
+      "Live GPS tracking on an interactive map",
+      "Automated delay & exception alerts",
+      "Customer-facing tracking links",
+      "Dispatcher dashboard for fleet-wide visibility",
+    ],
+    results: [
+      ["25%", "Fewer support calls"],
+      ["2x", "Faster delay resolution"],
+      ["18%", "Reduction in fuel cost via routing"],
+    ],
+  },
+  {
+    slug: "edtech-platform",
+    title: "EdTech Platform",
+    tag: "UI/UX Design",
+    img: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?fm=jpg&q=80&w=1200&auto=format&fit=crop",
+    accent: "#F368A0",
+    client: "Bright Path Learning",
+    overview: "A redesigned online learning experience for a course platform, aimed at improving course completion rates and making progress genuinely easy to track.",
+    highlights: [
+      "Redesigned course player & progress tracking",
+      "Simplified navigation between lessons & assignments",
+      "Instructor dashboard for student progress",
+      "Accessible design across devices",
+    ],
+    results: [
+      ["32%", "Higher course completion"],
+      ["21%", "More returning students"],
+      ["4.6/5", "Student satisfaction score"],
+    ],
+  },
+  {
+    slug: "real-estate-portal",
+    title: "Real Estate Portal",
+    tag: "Web Application",
+    img: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?fm=jpg&q=80&w=1200&auto=format&fit=crop",
+    accent: "#6D5DFC",
+    client: "Cornerstone Properties",
+    overview: "A property listing and search portal built to make browsing, filtering, and inquiring about listings fast — with tools for agents to manage listings directly.",
+    highlights: [
+      "Advanced search & map-based filtering",
+      "Agent dashboard for listing management",
+      "Instant inquiry & scheduling forms",
+      "Fast-loading image galleries per listing",
+    ],
+    results: [
+      ["45%", "More qualified inquiries"],
+      ["30%", "Faster listing turnaround"],
+      ["2.5x", "Time-on-site increase"],
+    ],
+  },
+];
+
+export function getProjectBySlug(slug) {
+  return PROJECTS.find((p) => p.slug === slug);
+}
